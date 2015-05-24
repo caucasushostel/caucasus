@@ -1,0 +1,2 @@
+module ServicesAmenitiesHelper
+end

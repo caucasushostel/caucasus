@@ -1,0 +1,2 @@
+class MapContactController < ApplicationController
+end

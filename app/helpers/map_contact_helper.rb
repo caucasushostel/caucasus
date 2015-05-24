@@ -1,0 +1,2 @@
+module MapContactHelper
+end

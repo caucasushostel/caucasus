@@ -1,0 +1,63 @@
+
+<div id="container">
+    <div id="row">
+        <div class="box">
+            <div id="nav">
+                <ul class="menu">
+                    <li> <%= link_to "Our Hostel", root_path %> </li>
+                    <li> <%= link_to "Accommodation", accommodation_path %> </li>
+                    <li> <%= link_to "Location", location_path %> </li>
+                    <li> <%= link_to "Services & Amenities",  service_path %> </li>
+                    <li> <%= link_to "Map & Contact",  map_path %> </li>
+                    <li> <%= link_to "Offers",  offer_path %> </li>
+                    <li> <%=link_to "Gallery", gallery_path %> </li>
+                </ul> <!-- end menu -->
+            </div> <!-- end nav -->
+            <div class="reserv">
+                <div class="input-daterange input-group" id="datepicker">
+                    <span class="input-group-addon">check-in</span>
+                    <input type="text" class="input-sm form-control" name="start" />
+                    <span class="input-group-addon">check-out</span>
+                    <input type="text" class="input-sm form-control" name="end" />
+                </div> <!-- end input-daterange -->
+                <div class="make_reservation">
+                    <%= button_to "Check Availability", reservation_path, :class => "button", :method => :get  %>
+                </div> <!-- end make_reservation -->
+            </div> <!-- end reserv -->
+
+            <div class="col-lg-12 text-center">
+
+                <h2 class="title_center_1">SPECIAL OFFERS</h2>
+
+                <h2 class="brand-before1">
+                   1. The longer, the cheaper If you have just arrived in the splendid capital Yerevan (as a new student, for a new job or for an extended holiday ) you may need a friendly, clean and secure place to stay for permanent accommodation . We have greatly reduced rates for students and long term guests.<br>
+                       . 5 days– 10% discount for the 6th and further days <br>
+                       . 10 days– 20% discount fir the 11th and further days <br>
+                       . 20 days – 30% discount for the 21st day and further days<br><br>
+
+                  2. GROUPS Special rates to save your money!<br>
+                     .10% booking discount for 10+ people.<br><br>
+
+                    3.Talented People!<br><br>
+
+                    Calling all artists, photographers and generally more talented people than ourselves! Can you paint a wall mural, take some great photosupon request or have any other special talent? Let us know about it and we may offer discounts on your stay!<br><br>
+
+                   Email us for quotes and availability! <br>
+                   info@caucasushostel.com</h2>
+
+                <hr class="tagline-divider">
+                    <h2>
+                        <small>
+                            <strong>Caucasus Hostel</strong>
+                        </small>
+                    </h2>
+            </div> <!-- end col-lg-12 -->
+        </div> <!-- end box -->
+    </div> <!-- end row -->
+</div> <!-- /.container -->
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('.input-sm').datepicker();
+    });
+</script>

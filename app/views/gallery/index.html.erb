@@ -1,0 +1,46 @@
+
+<div id="container">
+    <div id="row">
+        <div class="box">
+            <div id="nav">
+                <ul class="menu">
+                    <li> <%= link_to "Our Hostel", root_path %> </li>
+                    <li> <%= link_to "Accommodation", accommodation_path %> </li>
+                    <li> <%= link_to "Location", location_path %> </li>
+                    <li> <%= link_to "Services & Amenities",  service_path %> </li>
+                    <li> <%= link_to "Map & Contact",  map_path %> </li>
+                    <li> <%= link_to "Offers",  offer_path %> </li>
+                    <li> <%=link_to "Gallery", gallery_path %> </li>
+                </ul> <!-- end menu -->
+            </div> <!-- end nav -->
+            <div class="reserv">
+                <div class="input-daterange input-group" id="datepicker">
+                    <span class="input-group-addon">check-in</span>
+                    <input type="text" class="input-sm form-control" name="start" />
+                    <span class="input-group-addon">check-out</span>
+                    <input type="text" class="input-sm form-control" name="end" />
+                </div> <!-- end input-daterange -->
+                <div class="make_reservation">
+                    <%= button_to "Check Availability", reservation_path, :class => "button", :method => :get  %>
+                </div> <!-- end make_reservation -->
+            </div> <!-- end reserv -->
+
+            <div class="col-lg-12 text-center">
+
+
+                <hr class="tagline-divider">
+                    <h2>
+                        <small>
+                            <strong>Caucasus Hostel</strong>
+                        </small>
+                    </h2>
+            </div> <!-- end col-lg-12 -->
+        </div> <!-- end box -->
+    </div> <!-- end row -->
+</div> <!-- /.container -->
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('.input-sm').datepicker();
+    });
+</script>

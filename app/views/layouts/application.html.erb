@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Caucasushostel</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Business Casual - Start Bootstrap Theme</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/business-casual.css" rel="stylesheet">
+
+    <!-- Fonts -->
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  
+</head>
+<body>
+
+<div class="brand">Caucasus Hostel</div>
+<div class="logo">
+    <div class="logo-l"> </div>
+    <div class="logo-r"></div>
+</div>
+<div class="address-bar">10/17 Movses Khorenatsi street | Yerevan, Armenia |+374 99464044 |  hostelcaucasus@gmail.com</div>
+
+
+
+<%= yield %>
+
+<script> 
+$(document).ready(function() {
+ 
+  var sync1 = $("#sync1");
+  var sync2 = $("#sync2");
+ 
+  sync1.owlCarousel({
+    autoPlay : 2500,
+    singleItem : true,
+    slideSpeed : 1000,
+    navigation: true,
+    pagination:false,
+    afterAction : syncPosition,
+    responsiveRefreshRate : 200,
+  });
+ 
+  sync2.owlCarousel({
+    items : 15,
+    itemsDesktop      : [1199,10],
+    itemsDesktopSmall     : [979,10],
+    itemsTablet       : [768,8],
+    itemsMobile       : [479,4],
+    pagination:false,
+    responsiveRefreshRate : 100,
+    afterInit : function(el){
+      el.find(".owl-item").eq(0).addClass("synced");
+    }
+  });
+ 
+  function syncPosition(el){
+    var current = this.currentItem;
+    $("#sync2")
+      .find(".owl-item")
+      .removeClass("synced")
+      .eq(current)
+      .addClass("synced")
+    if($("#sync2").data("owlCarousel") !== undefined){
+      center(current)
+    }
+  }
+ 
+  $("#sync2").on("click", ".owl-item", function(e){
+    e.preventDefault();
+    var number = $(this).data("owlItem");
+    sync1.trigger("owl.goTo",number);
+  });
+ 
+  function center(number){
+    var sync2visible = sync2.data("owlCarousel").owl.visibleItems;
+    var num = number;
+    var found = false;
+    for(var i in sync2visible){
+      if(num === sync2visible[i]){
+        var found = true;
+      }
+    }
+ 
+    if(found===false){
+      if(num>sync2visible[sync2visible.length-1]){
+        sync2.trigger("owl.goTo", num - sync2visible.length+2)
+      }else{
+        if(num - 1 === -1){
+          num = 0;
+        }
+        sync2.trigger("owl.goTo", num);
+      }
+    } else if(num === sync2visible[sync2visible.length-1]){
+      sync2.trigger("owl.goTo", sync2visible[1])
+    } else if(num === sync2visible[0]){
+      sync2.trigger("owl.goTo", num-1)
+    }
+    
+  }
+ 
+});
+  </script>
+
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>

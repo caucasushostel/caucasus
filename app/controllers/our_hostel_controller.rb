@@ -1,0 +1,2 @@
+class OurHostelController < ApplicationController
+end

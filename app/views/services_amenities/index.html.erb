@@ -1,0 +1,87 @@
+
+<div id="container">
+    <div id="row">
+        <div class="box">
+            <div id="nav">
+                <ul class="menu">
+                    <li> <%= link_to "Our Hostel", root_path %> </li>
+                    <li> <%= link_to "Accommodation", accommodation_path %> </li>
+                    <li> <%= link_to "Location", location_path %> </li>
+                    <li> <%= link_to "Services & Amenities",  service_path %> </li>
+                    <li> <%= link_to "Map & Contact",  map_path %> </li>
+                    <li> <%= link_to "Offers",  offer_path %> </li>
+                    <li> <%=link_to "Gallery", gallery_path %> </li>
+                </ul> <!-- end menu -->
+            </div> <!-- end nav -->
+            <div class="reserv">
+                <div class="input-daterange input-group" id="datepicker">
+                    <span class="input-group-addon">check-in</span>
+                    <input type="text" class="input-sm form-control" name="start" />
+                    <span class="input-group-addon">check-out</span>
+                    <input type="text" class="input-sm form-control" name="end" />
+                </div> <!-- end input-daterange -->
+                <div class="make_reservation">
+                    <%= button_to "Check Availability", reservation_path, :class => "button", :method => :get  %>
+                </div> <!-- end make_reservation -->
+            </div> <!-- end reserv -->
+
+            <div class="col-lg-12 text-center">
+
+                <h2 class="title_center_1">OUR SERVICES</h2>
+
+                <h2 class="brand-before1">
+                   A BIG thank to our guests for choosing Caucasus Hostel for their stay.<br><br>
+
+                   Our receptionists will always give you a friendly welcome and help you with any questions about what to see in and around the capital city-Yerevan. We aim to look after you totally so you can have the best holiday possible. Here’s a list of more that we offer…<br><br>
+
+                   Be ready to enjoy!<br>
+
+                   FREE BREAKFAST <br> 
+                   Every day from 9h to 11h we provide you with a fresh breakfast with tea. Not only the breakfast is free and delicious, we also take care of the breakfast dishes for you.
+
+                   COMMUNICATIONS <br>
+                   We offer free wi-fi internet connection everywhere from the common areas to the rooms.<br><br>
+
+                   LINEN + TOWELS<br>
+
+                   There aren’t extra charges for the beddings. All are included in the final price, so you won’t need to be carrying any extra stuff from home. In case you need to wash your clothing we have a laundry service free of charge.<br><br>
+
+                   SAFETY & SECURITY<br>
+
+                   You and your things are safe. The hostel has door control 24 hours a day. In the rooms, we supply big bed-side lockers for your luggage and staff.<br><br>
+
+                   COMMON FACILITIES<br>
+                   We dedicate a big area of our hostel to common spaces. Relax in our unique dinning area to eat or socialize. If tired just chill watching a movie in our cozy TV room.<br><br>
+
+                   KITCHEN AND FOOD <br>
+                   Our kitchen is equipped with all the necessary amenities you need to prepare a delicious meal. After breakfast you can cook your own food and keep your groceries in the fridge.<br><br>
+
+                   TOILETRIES <br>
+                   The hostel common bathrooms, are cleaned through out the day. The toilets include soap, towels, hairdryers and hot water 24 hours a day. To keep your clothes sharp, we have an iron and iron board.<br><br>
+
+                   OTHER SERVICES<br><br>
+
+                   • Open 24 hours every day of the year <br>
+                   • Vibrant atmosphere with bar and open air cafe <br>
+                   • Hot and powerful showers <br>
+                   • Privilege of smoking kalian <br>
+                   • Sunny and cheery patio <br>
+                   • Minutes from the city’s main attractions <br> 
+                   • No hidden charges</h2>
+
+                <hr class="tagline-divider">
+                    <h2>
+                        <small>
+                            <strong>Caucasus Hostel</strong>
+                        </small>
+                    </h2>
+            </div> <!-- end col-lg-12 -->
+        </div> <!-- end box -->
+    </div> <!-- end row -->
+</div> <!-- /.container -->
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('.input-sm').datepicker();
+    });
+</script>

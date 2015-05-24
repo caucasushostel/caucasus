@@ -1,0 +1,62 @@
+
+<div id="container">
+    <div id="row">
+        <div class="box">
+            <div id="nav">
+                <ul class="menu">
+                    <li> <%= link_to "Our Hostel", root_path %> </li>
+                    <li> <%= link_to "Accommodation", accommodation_path %> </li>
+                    <li> <%= link_to "Location", location_path %> </li>
+                    <li> <%= link_to "Services & Amenities",  service_path %> </li>
+                    <li> <%= link_to "Map & Contact",  map_path %> </li>
+                    <li> <%= link_to "Offers",  offer_path %> </li>
+                    <li> <%=link_to "Gallery", gallery_path %> </li>
+                </ul> <!-- end menu -->
+            </div> <!-- end nav -->
+            <div class="reserv">
+                <div class="input-daterange input-group" id="datepicker">
+                    <span class="input-group-addon">check-in</span>
+                    <input type="text" class="input-sm form-control" name="start" />
+                    <span class="input-group-addon">check-out</span>
+                    <input type="text" class="input-sm form-control" name="end" />
+                </div> <!-- end input-daterange -->
+                <div class="make_reservation">
+                    <%= button_to "Check Availability", reservation_path, :class => "button", :method => :get  %>
+                </div> <!-- end make_reservation -->
+            </div> <!-- end reserv -->
+
+            <div class="col-lg-12 text-center">
+                <h2 class="title_center_1">Great spot to start! </h2>
+                <h2 class="brand-before3">
+                    Our unique hostel is a perfect starting point to explore all the famous historical, architectural and entertainment attractions of the amazing capital city – Yerevan.<br><br>
+                </h2>
+                <div class="location_1">
+                    <img class="opera" src="assets/location-slide-1.jpg">
+                </div>
+                <h2 class="brand-before2">
+                    The location of Caucasus Hostel on Movses Khorenatsi street leads you to the Opera House and fascinating Cascade Complex in only 5 minutes – places to the brim with cafés, restaurants, museums, souvenir shops and boutiques, as well as the best clubs to enjoy the nightlife in the capital city.<br><br>
+                </h2>
+
+                <h2 class="brand-before4">
+                        Just steps from the splendid Northern Avenue – home to luxurious residential buildings, elite brand shops, commercial offices, coffee shops and restaurants, that leads you directly to the Republic Square with its History Museum and Art Gallery, there is never a lack of things to do or see in the area.
+                </h2>
+
+                <div class="location_2">
+                    <img class="opera1" src="assets/location-slide-2.jpg">
+                </div>
+                    <hr class="tagline-divider">
+                    <h2>
+                        <small>
+                            <strong>Caucasus Hostel</strong>
+                        </small>
+                    </h2>
+            </div> <!-- end col-lg-12 -->
+        </div> <!-- end box -->
+    </div> <!-- end row -->
+</div> <!-- /.container -->
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('.input-sm').datepicker();
+    });
+</script>

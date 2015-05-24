@@ -1,0 +1,126 @@
+// Place all the styles related to the accommodation controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.our_rooms {
+    margin: 120px 0;
+    font-size: 35px;
+    text-align: left;
+    #font-family: "Tangerine",serif;
+    color: black;
+    text-transform: none;
+    text-align: justify;
+}
+
+.rooms {
+  position: relative;
+  min-height: 1px;
+  padding-right: 0px;
+  padding-left: 0px;
+}
+.double_room-l {
+  position: relative;
+  min-height: 1px;
+  padding-left: 0px;
+  padding-bottom: 0px; 
+  border-style: groove;
+  border-color: brown;
+  border-width: 10px;
+}
+
+.double_room-l {
+  position: relative;
+  min-height: 1px;
+  padding-left: 0px;
+  padding-bottom: 0px; 
+  border-style: groove;
+  border-color: brown;
+  border-width: 10px;
+}
+.double_room-r {
+  position: relative;
+  min-height: 1px;
+  padding-left: 0px;
+  padding-bottom: 0px; 
+  border-style: groove;
+  border-color: brown;
+  border-width: 10px;
+}
+
+.db_rooms {
+    text-align: center;
+    margin-top: 50px;
+    color: #000;
+    font-size: 35px;
+
+}
+
+.img_db-l{
+     width:750px;
+     height: 600px;
+     float: left;
+     border-radius: 25px;
+     margin-top: 8px;
+     margin-left:8px;
+
+}
+.img_db-r{
+     width:750px;
+     height: 600px;
+     float: right;
+     border-radius: 25px;
+     margin-top: 8px;
+     margin-right:8px;
+
+}
+.db_room_text-l{
+    padding-left: 8px;
+    padding-right: 800px;
+    margin-top: 20px;
+    margin-bottom: -40px;
+    font-size: 35px;
+    font-family: "Josefin Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-transform: none;
+    text-align: justify;
+    color: #000;
+}
+
+.db_room_text-r{
+    padding-left: 770px;
+    padding-right: 8px;
+    margin-top: 20px;
+    margin-bottom: -40px;
+    font-size: 35px;
+    font-family: "Josefin Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-transform: none;
+    text-align: justify;
+    color: #000;
+}
+.db_price {
+    text-transform: upercase;
+    text-align: justify;
+    padding-left: 100px;
+    padding-top: 15px;
+    color: #000;
+}
+
+.db_price-r {
+    text-transform: upercase;
+    text-align: justify;
+    padding-left:  1150px;
+    padding-top: 15px;
+    color: #000;
+}
+
+.title_center {
+    text-align: center;
+    color: #000;
+    font-size: 60px;
+    padding-top: 15px;
+}
+
+.our_rooms {
+     margin-top: 35px;
+     text-align: justify;
+}

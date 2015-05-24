@@ -1,0 +1,179 @@
+// Place all the styles related to the our_hostel controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+#nav {
+    background-image: url(/assets/bg-topnav.png);
+    height: 105px;
+    margin: 1px 5px 5px -85px;
+    padding: 0;
+    position: relative;
+    width: 1970px;
+    z-index: 200;
+}
+
+
+
+li {
+    display: inline;
+    margin: 15px 30px 8px;
+    float:left;
+}
+
+ul.menu li{
+   list-style-type: circle; 
+   list-style-position: inside; 
+   font-size: 28px;
+   text-transform: uppercase;
+   padding: 0;
+   margin-left: 48px;
+
+    
+}
+
+
+a:visited { 
+  color: #DEB887;
+}
+a:hover { 
+  color: #FFFFFF;
+}
+a:active { 
+  color: #333333;
+}
+
+#sync1 .item{
+    background: #fff;
+    padding: 0px 0px;
+    margin: 5px;
+    color: #FFF;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    text-align: center;
+}
+#sync2 .item{
+    background: #C9C9C9;
+    padding: 10px 0px;
+    margin: 5px;
+    color: #FFF;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    text-align: center;
+    cursor: pointer;
+    border-bottom:15px sold #3A2E22;
+    border-top:25px sold #3A2E22;
+}
+#sync2 .item h1{
+  font-size: 18px;
+}
+#sync2 .synced .item{
+  background: #fff;
+}
+
+#container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 1700px;
+}
+
+.logo-l {
+    background: url("../assets/logo-icon-l.png") no-repeat scroll 0% 0% transparent;
+    width: 150px;
+    height: 52px;
+    float: left;
+    margin-right: 3000px;
+    margin-top: -150px;
+}
+
+.logo-r {
+    background: url("../assets/logo-icon-r.png") no-repeat scroll 0% 0% transparent;
+    width: 150px;
+    height: 52px;
+    float: left;
+    margin-left: 810px;
+    margin-top: -150px;
+}
+
+    .logo{
+    padding: 40px 0px 0px 35px;
+    clear: both;
+    width: 1000px;
+    margin: 0px auto;
+    height: 10px;
+    padding-bottom: -115px;
+
+}
+
+.col-lg-13{
+  position: relative;
+  background: none repeat scroll 0% 0% #E1D9CC;
+  padding-top: 35px;
+  padding-right: 35px;
+  padding-left: 35px;
+}
+
+.col-lg-14{
+  position: relative;
+  background: none repeat scroll 0% 0% #E1D9CC;
+  padding-top: 0px;
+  padding-right: 35px;
+  padding-left: 35px;
+  padding-bottom: 0px;
+}
+
+.datepicker{
+  #padding-bottom: 56px;
+}
+
+.reserv{
+width: auto;
+line-height: 40px;
+height: 50px;
+margin-left: 45px;
+margin-top: -10px;
+color: #484848;
+font-size: 30px;
+text-transform: uppercase;
+letter-spacing: 2px;
+margin-bottom: 20px;
+}
+
+.make_reservation{
+
+  #background: none repeat scroll 0% 0% #E1D9CC;
+  margin-left: 650px;
+  margin-top: -45px;
+}
+
+.lg-image {
+  width: 1765px;
+  height: 850px;
+}
+
+.sm-image {
+  width: 108px; 
+  height: 70px;
+}
+
+.brand-before1  {
+    margin: 40px 0;
+    font-size: 35px;
+    text-align: left;
+    #font-family: "Tangerine",serif;
+    color: black;
+    text-transform: none;
+    text-align: justify;
+}
+
+
+.title_center_1{
+      text-align: center;
+    color: #000;
+    font-size: 50px;
+    padding-top: 45px;
+}
