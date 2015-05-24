@@ -1,3 +1,146 @@
 // Place all the styles related to the services_amenities controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.breakfast{
+  position: relative;
+  width: 32%;
+  height: 700px;
+  margin-right:15px;
+  margin-left: 30px;
+  min-height: 1px;
+  float: left;
+  padding-left: 0px;
+  padding-bottom: 0px; 
+  border-style: groove;
+  border-color: brown;
+  border-width: 10px;
+}
+
+.linen{
+  position: relative;
+  float: left;
+  margin-right:15px;
+  width: 32%;
+  height: 700px;
+  min-height: 1px;
+  padding-left: 0px;
+  padding-bottom: 0px; 
+  border-style: groove;
+  border-color: brown;
+  border-width: 10px;
+}
+
+.security{
+  position: relative;
+  float: left;
+  width: 32%;
+  height: 700px;
+  min-height: 1px;
+  padding-left: 0px;
+  padding-bottom: 0px; 
+  border-style: groove;
+  border-color: brown;
+  border-width: 10px;
+	
+}
+
+.facilities {
+  position: relative;
+  width: 32%;
+  height: 700px;
+  margin-right:15px;
+  margin-left: 30px;
+  margin-top:15px;
+  min-height: 1px;
+  float: left;
+  padding-left: 0px;
+  padding-bottom: 0px; 
+  border-style: groove;
+  border-color: brown;
+  border-width: 10px;
+}
+
+.kitchen{
+  position: relative;
+  float: left;
+  margin-right:15px;
+  margin-top:15px;
+  width: 32%;
+  height: 700px;
+  min-height: 1px;
+  padding-left: 0px;
+  padding-bottom: 0px; 
+  border-style: groove;
+  border-color: brown;
+  border-width: 10px;
+	
+}
+
+.toiletries{
+  position: relative;
+  float: left;
+  margin-top:15px;
+  margin-bottom: 40px;
+  width: 32%;
+  height: 700px;
+  min-height: 1px;
+  padding-left: 0px;
+  padding-bottom: 0px; 
+  border-style: groove;
+  border-color: brown;
+  border-width: 10px;
+}
+
+.img_bf{
+     width:490px;
+     height: 300px;
+     float: left;
+     border-radius: 25px;
+     margin-top: 8px;
+     margin-left:28px;
+     margin-bottom: 15px;
+
+}
+
+.h2_services  {
+    margin: 40px 0;
+    font-size: 35px;
+    text-align: left;
+    #font-family: "Tangerine",serif;
+    color: black;
+    text-transform: none;
+    margin-left:15px;
+    margin-right: 15px;
+    text-align: justify;
+}
+
+
+.other_services{
+  position: relative;
+  float: left;
+  margin-top:15px;
+  width: 96%;
+  height: 400px;
+  min-height: 1px;
+  padding-left: 0px;
+  padding-bottom: 0px; 
+  border-style: groove;
+  border-color: brown;
+  border-width: 10px;
+	
+}
+
+.h2_services_title{
+	padding-top: 5px;
+    margin: 40px 0;
+    font-size: 35px;
+    text-align: left;
+    #font-family: "Tangerine",serif;
+    color: black;
+    text-transform: none;
+
+    text-align: center;
+	
+}
