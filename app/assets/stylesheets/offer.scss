@@ -1,3 +1,68 @@
 // Place all the styles related to the offfer controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.lng {
+  position: relative;
+  width: 97%;
+  height: 500px;
+  margin-top: 35px;
+  margin-right:15px;
+  margin-left: 30px;
+  min-height: 1px;
+  float: left;
+  padding-left: 0px;
+  padding-bottom: 0px; 
+  border-bottom: dashed;
+  border-color: #DEB887;
+  border-width: 5px;
+}
+
+.longer{
+	margin-right:50px;
+	margin-left: 550px;
+    font-size: 35px;
+    text-align: left;
+    #font-family: "Tangerine",serif;
+    color: black;
+    text-transform: none;
+    text-align: justify; 
+}
+
+.longer1{
+	margin-left: 40px;
+    font-size: 40px;
+    margin-top: 15px;
+    text-align: left;
+    #font-family: "Tangerine",serif;
+    color: black;
+    text-transform: none;
+    text-align: justify; 
+}
+
+.grp{
+  position: relative;
+  width: 97%;
+  height: 500px;
+  margin-top: 35px;
+  margin-right:15px;
+  margin-left: 30px;
+  min-height: 1px;
+  float: left;
+  padding-left: 0px;
+  padding-bottom: 0px; 
+  border-bottom: dashed;
+  border-color: #DEB887;
+  border-width: 5px;
+}
+
+.grp1 {
+	margin-left: 550px;
+    font-size: 40px;
+    text-align: left;
+    #font-family: "Tangerine",serif;
+    color: black;
+    text-transform: none;
+    text-align: justify; 
+}
