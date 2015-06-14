@@ -27,45 +27,67 @@
 
             <div class="col-lg-12 text-center">
 
-                <h2 class="title_center_1">SPECIAL OFFERS</h2>
+                <h2 class="title_center_1_2">SPECIAL OFFERS</h2>
 
-                <div class="lng">
-                    <img class="img_bf" src="assets/lng.jpg" >
-                    <h2 class="longer">
-                        The longer, the cheaper!<br><br> If you have just arrived in the splendid capital Yerevan (as a new student, for a new job or for an extended holiday ) you may need a friendly, clean and secure place to stay for permanent accommodation. We have greatly reduced rates for students and long term guests.<br><br>
-                    </h2>
-                    <h2 class="longer1">
-                        . 5 days– 10% discount for the 6th and further days <br>
-                        . 10 days– 20% discount fir the 11th and further days <br>
-                        . 20 days – 30% discount for the 21st day and further days<br><br>
-                    </h2>
-                 </div>
+                <div class="toggle">
 
-                <div class="grp">
-                    <img class="img_bf" src="assets/grp.jpg" >
-                    <h2 class="longer">
-                      Groups<br><br> Special rates to save your money!<br>
-                     
-                    </h2>
-                    <h2 class="grp1">
-                        10% booking discount for 10+ people.<br><br>
-                    </h2>
-                 </div>
+                    <!-- Toggle Link -->
+                    <a href="#" title="Title of Toggle" class="toggle-trigger_1"><h2 class="title_center_1_1">The longer, the cheaper!</h2></a>
 
-                <div class="grp">
-                    <img class="img_bf" src="assets/lng.jpg" >
-                    <h2 class="longer">
-                            Talented People!<br><br>
+                    <!-- Toggle Content to display -->
+                    <div class="toggle-content">
+                        <img class="img_lon" src="assets/longer.jpg" >
+                        <h2 class="longer">
+                                 If you have just arrived in the splendid capital Yerevan (as a new student, for a new job or for an extended holiday ) you may need a friendly, clean and secure place to stay for permanent accommodation. We have greatly reduced rates for students and long term guests.<br>
+                        </h2>
+
+                        <h2 class="longer1">
+                            . 5 days– 10% discount for the 6th and further days <br>
+                            . 10 days– 20% discount fir the 11th and further days <br>
+                            . 20 days – 30% discount for the 21st day and further days<br><br>
+                        </h2>
+                    </div> <!-- .toggle-content (end) -->
+                </div> <!-- .toggle (end) -->
+
+                <!-- Toggle #2 -->
+                <div class="toggle">
+
+                    <!-- Toggle Link -->
+                    <a href="#" title="Title of Toggle" class="toggle-trigger_2" >
+                     <h2 class="title_center_1_1"> 10+ People Groups! </h2></a>
+
+                    <!-- Toggle Content to display -->
+                    <div class="toggle-content">
+                        <img class="img_group" src="assets/group.png" >
+                        <h2 class="longer">
+                            <br> Special rates to save your money!<br>         
+                        </h2>
+                        <h2 class="grp1">
+                            10% booking discount for 10+ people.<br><br><br><br><br><br>
+                        </h2>
+                    </div><!-- .toggle-content (end) -->
+                </div><!-- .toggle (end) -->
+
+                <div class="toggle">
+
+                     <!-- Toggle Link -->
+                    <a href="#" title="Title of Toggle" class="toggle-trigger_3"> <h2 class="title_center_1_1"> Talented People!</h2></a>
+
+                    <!-- Toggle Content to display -->
+                    <div class="toggle-content">
+                        <img class="img_talented" src="assets/tallented.jpg" >
+                        <h2 class="longer">
                             Calling all artists, photographers and generally more talented people than ourselves! Can you paint a wall mural, take some great photosupon request or have any other special talent? Let us know about it and we may offer discounts on your stay!<br><br>
 
-                   Email us for quotes and availability! <br>
-                   hostelcaucasus@gmail.com
-                     
-                    </h2>
-                    <h2 class="longer1">
-                        .10% booking discount for 10+ people.<br><br>
-                    </h2>
-                 </div>
+                            Email us for quotes and availability! <br>
+                            hostelcaucasus@gmail.com        
+                        </h2>
+                        <h2 class="grp1">
+                            10% booking discount for 10+ people.<br><br>
+                        </h2>
+                    </div> <!-- .toggle-content (end) -->
+                </div> <!-- .toggle (end) -->
+
 
                 <hr class="tagline-divider">
                     <h2>
@@ -82,4 +104,90 @@
     $(document).ready(function(){
         $('.input-sm').datepicker();
     });
+</script>
+
+
+<script type="text/javascript">
+jQuery(document).ready(function($) { 
+
+    // Find the toggles and hide their content
+    $('.toggle').each(function(){
+        $(this).find('.toggle-content').hide();
+    });
+
+    // When a toggle is clicked (activated) show their content
+    $('.toggle a.toggle-trigger_1').click(function(){
+        var el = $(this), parent = el.closest('.toggle');
+
+        if( el.hasClass('active') )
+        {
+            parent.find('.toggle-content').slideToggle();
+            el.removeClass('active');
+        }
+        else
+        {
+            parent.find('.toggle-content').slideToggle();
+            el.addClass('active');
+        }
+        return false;
+    });
+
+});  //End
+</script>
+
+
+<script type="text/javascript">
+jQuery(document).ready(function($) { 
+
+    // Find the toggles and hide their content
+    $('.toggle').each(function(){
+        $(this).find('.toggle-content').hide();
+    });
+
+    // When a toggle is clicked (activated) show their content
+    $('.toggle a.toggle-trigger_2').click(function(){
+        var el = $(this), parent = el.closest('.toggle');
+
+        if( el.hasClass('active') )
+        {
+            parent.find('.toggle-content').slideToggle();
+            el.removeClass('active');
+        }
+        else
+        {
+            parent.find('.toggle-content').slideToggle();
+            el.addClass('active');
+        }
+        return false;
+    });
+
+});  //End
+</script>
+
+<script type="text/javascript">
+jQuery(document).ready(function($) { 
+
+    // Find the toggles and hide their content
+    $('.toggle').each(function(){
+        $(this).find('.toggle-content').hide();
+    });
+
+    // When a toggle is clicked (activated) show their content
+    $('.toggle a.toggle-trigger_3').click(function(){
+        var el = $(this), parent = el.closest('.toggle');
+
+        if( el.hasClass('active') )
+        {
+            parent.find('.toggle-content').slideToggle();
+            el.removeClass('active');
+        }
+        else
+        {
+            parent.find('.toggle-content').slideToggle();
+            el.addClass('active');
+        }
+        return false;
+    });
+
+});  //End
 </script>
